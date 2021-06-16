@@ -5,8 +5,10 @@ import './Coin.css';
 class Coin extends Component {
     render() {
         return (
-            <img src={`https://tinyurl.com/react-coin-${this.props.face}-jpg`}
+            <div className="Coin">
+                <img src={`https://tinyurl.com/react-coin-${this.props.face}-jpg`}
                 alt={`coin face ${this.props.face}`}></img>
+            </div> 
         );
     }
 }
